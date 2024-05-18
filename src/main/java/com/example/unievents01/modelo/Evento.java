@@ -7,12 +7,13 @@ public class Evento implements Serializable {
 
     private String nombre;
     private Ciudad ciudad;
-    private String descripcion;
+
     private Tipo tipo;
-    private String imagen;
     private String fecha;
     private String direccion;
     private List<Localidad> localidades;
+    private String imagen;
+    private String descripcion;
 
 
     public Evento(String nombre, Ciudad ciudad, String descripcion, Tipo tipo, String imagen, String fecha, String direccion, List<Localidad> localidades) {

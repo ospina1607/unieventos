@@ -4,13 +4,23 @@ import java.io.Serializable;
 
 public class Localidad implements Serializable {
 
+    private int numeroLocalidad;
     private double precio;
     private int capacidadMaxima;
 
 
-    public Localidad(double precio, int capacidadMaxima) {
+    public Localidad(int numeroLocalidad, double precio, int capacidadMaxima) {
+        this.numeroLocalidad = numeroLocalidad;
         this.precio = precio;
         this.capacidadMaxima = capacidadMaxima;
+    }
+
+    public int getNumeroLocalidad() {
+        return numeroLocalidad;
+    }
+
+    public void setNumeroLocalidad(int numeroLocalidad) {
+        this.numeroLocalidad = numeroLocalidad;
     }
 
     public double getPrecio() {
@@ -32,11 +42,9 @@ public class Localidad implements Serializable {
     @Override
     public String toString() {
         return "Localidad{" +
-                "precio=" + precio +
+                "numeroLocalidad=" + numeroLocalidad +
+                ", precio=" + precio +
                 ", capacidadMaxima=" + capacidadMaxima +
                 '}';
     }
-
-
-
 }
